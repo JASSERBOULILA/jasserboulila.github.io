@@ -314,6 +314,140 @@ body {
     cursor: pointer;
 }
 
+
+
+/* Theme Toggle Button */
+.theme-toggle {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: var(--bg-light);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+}
+
+.theme-toggle:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    color: var(--primary-color);
+}
+
+body.dark-mode {
+    --text-dark: #f7fafc;
+    --text-light: #cbd5e0;
+    --bg-light: #0f172a;
+    --bg-white: #111827;
+    --border-color: #334155;
+    background-color: var(--bg-light);
+}
+
+body.dark-mode .navbar,
+body.dark-mode .navbar.scrolled,
+body.dark-mode .about-section,
+body.dark-mode .projects-section,
+body.dark-mode .contact-info,
+body.dark-mode .contact-form-container,
+body.dark-mode .skill-category,
+body.dark-mode .tech-stack,
+body.dark-mode .project-card,
+body.dark-mode .social-icon,
+body.dark-mode .btn-secondary,
+body.dark-mode .experience-badge,
+body.dark-mode .theme-toggle {
+    background: rgba(17, 24, 39, 0.95);
+    color: var(--text-dark);
+}
+
+body.dark-mode .about-section,
+body.dark-mode .projects-section {
+    background: var(--bg-white);
+}
+
+body.dark-mode .skills-section,
+body.dark-mode .contact-section,
+body.dark-mode .stat-item,
+body.dark-mode .tech-icon,
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode textarea,
+body.dark-mode .tech-badge,
+body.dark-mode .tag,
+body.dark-mode .social-icon-contact {
+    background: #1e293b;
+    color: var(--text-dark);
+}
+
+body.dark-mode .btn-secondary,
+body.dark-mode .btn-outline {
+    border-color: var(--primary-color);
+}
+
+body.dark-mode .btn-secondary:hover,
+body.dark-mode .btn-outline:hover {
+    color: white;
+}
+
+body.dark-mode .nav-links a,
+body.dark-mode .logo-container .logo,
+body.dark-mode .section-title,
+body.dark-mode .about-subtitle,
+body.dark-mode .category-title,
+body.dark-mode .project-title,
+body.dark-mode .contact-info-title,
+body.dark-mode .tech-stack-title,
+body.dark-mode label,
+body.dark-mode .method-content h4,
+body.dark-mode .stat-number {
+    color: var(--text-dark);
+}
+
+body.dark-mode .hero-description,
+body.dark-mode .about-paragraph,
+body.dark-mode .section-description,
+body.dark-mode .contact-info-text,
+body.dark-mode .method-content a,
+body.dark-mode .method-content p,
+body.dark-mode .projects-cta p,
+body.dark-mode .greeting,
+body.dark-mode .hero-subtitle,
+body.dark-mode .stat-label,
+body.dark-mode .footer-text,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-contact li {
+    color: var(--text-light);
+}
+
+body.dark-mode input[type="text"]:focus,
+body.dark-mode input[type="email"]:focus,
+body.dark-mode textarea:focus {
+    background: #0f172a;
+}
+
+body.dark-mode .social-icon:hover,
+body.dark-mode .social-icon-contact:hover,
+body.dark-mode .tech-icon:hover {
+    color: white;
+}
+
+body.dark-mode .footer {
+    background: linear-gradient(135deg, #020617 0%, #0f172a 100%);
+}
+
+body.dark-mode .project-overlay {
+    background: rgba(79, 70, 229, 0.92);
+}
+
+body.dark-mode .mobile-menu-btn {
+    color: var(--text-dark);
+}
+
 /* ===========================================
    HERO SECTION
    =========================================== */
@@ -1382,5 +1516,14 @@ textarea {
     
     .project-card.featured {
         grid-column: span 1;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .theme-toggle {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 }

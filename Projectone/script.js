@@ -1,15 +1,46 @@
+
 // ===========================================
-// ENHANCED PORTFOLIO JAVASCRIPT
+// DARK / LIGHT MODE TOGGLE
 // ===========================================
-// Features:
-// - Typing animation
-// - Smooth scroll navigation
-// - Navbar scroll effect
-// - Skill bar animations on scroll
-// - Form validation and submission
-// - Scroll-to-top button
-// - Active nav link highlighting
-// ===========================================
+
+// create toggle button in navbar
+const themeToggle = document.createElement("button");
+themeToggle.id = "themeToggle";
+themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+themeToggle.style.marginLeft = "20px";
+themeToggle.style.background = "none";
+themeToggle.style.border = "none";
+themeToggle.style.fontSize = "1.3rem";
+themeToggle.style.cursor = "pointer";
+
+document.querySelector(".nav-links").appendChild(themeToggle);
+
+// check saved theme
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+}
+
+// toggle theme
+themeToggle.addEventListener("click", () => {
+
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("theme", "dark");
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+        localStorage.setItem("theme", "light");
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+
+});
+
+
+
+
 
 document.addEventListener('DOMContentLoaded', function() {
     
