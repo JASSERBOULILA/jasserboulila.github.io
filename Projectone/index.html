@@ -1,624 +1,767 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jasser Boulila | Developer Portfolio</title>
     <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Animated Background -->
     <div class="background-animation">
-        <div class="gradient-bg"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
+      <div class="gradient-bg"></div>
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+      </div>
     </div>
 
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="logo-container">
-                <h1 class="logo">JB<span class="logo-dot">.</span></h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <i class="fas fa-bars"></i>
-            </button>
+      <div class="container">
+        <div class="logo-container">
+          <h1 class="logo">JB<span class="logo-dot">.</span></h1>
         </div>
+        <ul class="nav-links">
+          <li>
+            <a href="#home"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="#about"><i class="fas fa-user"></i> About</a>
+          </li>
+          <li>
+            <a href="#skills"><i class="fas fa-code"></i> Skills</a>
+          </li>
+          <li>
+            <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
+          </li>
+          <li>
+            <a href="#contact"><i class="fas fa-envelope"></i> Contact</a>
+          </li>
+        </ul>
+        <div class="nav-actions">
+          <button
+            id="themeToggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            aria-label="Open menu"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="greeting">
-                        <span class="wave">👋</span> Hello, I'm
-                    </div>
-                    <h1 class="hero-title">
-                        <span class="gradient-text">Jasser Boulila</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        <span class="typed-text"></span>
-                        <span class="cursor">|</span>
-                    </h2>
-                    <p class="hero-description">
-                        I craft beautiful, functional websites and applications that make a difference. 
-                        Passionate about creating seamless user experiences with modern technologies.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i> View My Work
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i class="fas fa-paper-plane"></i> Get In Touch
-                        </a>
-                    </div>
-                    <div class="social-links">
-                        <a href="https://github.com/jasserboulila" target="_blank" class="social-icon">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://linkedin.com/in/jasserboulila" target="_blank" class="social-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="https://twitter.com/jasserboulila" target="_blank" class="social-icon">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="mailto:jasser@example.com" class="social-icon">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="./images/bb3541b1-4be7-47d2-8f6f-27cf06798aa8.jpg" alt="Jasser Boulila" class="profile-pic">
-                        <div class="image-glow"></div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="greeting"><span class="wave">👋</span> Hello, I'm</div>
+            <h1 class="hero-title">
+              <span class="gradient-text">Jasser Boulila</span>
+            </h1>
+            <h2 class="hero-subtitle">
+              <span class="typed-text"></span>
+              <span class="cursor">|</span>
+            </h2>
+            <p class="hero-description">
+              I craft beautiful, functional websites and applications that make
+              a difference. Passionate about creating seamless user experiences
+              with modern technologies.
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-rocket"></i> View My Work
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i> Get In Touch
+              </a>
             </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/jasserboulila"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://linkedin.com/in/jasserboulila"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/jasserboulila"
+                target="_blank"
+                class="social-icon"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="mailto:jasser@example.com" class="social-icon">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-container">
+              <img
+                src="./images/bb3541b1-4be7-47d2-8f6f-27cf06798aa8.jpg"
+                alt="Jasser Boulila"
+                class="profile-pic"
+              />
+              <div class="image-glow"></div>
+            </div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
+      </div>
+      <div class="scroll-indicator">
+        <a href="#about">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Get To Know Me</span>
-                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-                <div class="title-underline"></div>
-            </div>
-            
-            <div class="about-content">
-                <div class="about-image-container">
-                    <div class="about-card">
-                        <img src="./images/bb3541b1-4be7-47d2-8f6f-27cf06798aa8.jpg" alt="About Me" class="about-img">
-                        <div class="experience-badge">
-                            <div class="badge-content">
-                                <span class="badge-number">2+</span>
-                                <span class="badge-text">Years Experience</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-text">
-                    <h3 class="about-subtitle">Full-Stack Developer & Creative Thinker</h3>
-                    <p class="about-paragraph">
-                        I'm a passionate developer with a keen eye for design and a love for creating 
-                        exceptional digital experiences. My journey in web development started with curiosity 
-                        and has evolved into a professional career where I combine technical expertise with 
-                        creative problem-solving.
-                    </p>
-                    <p class="about-paragraph">
-                        I specialize in building modern, responsive websites and applications using the latest 
-                        technologies. From crafting pixel-perfect user interfaces to developing robust backend 
-                        systems, I enjoy every aspect of bringing ideas to life.
-                    </p>
-                    <p class="about-paragraph">
-                        When I'm not coding, you'll find me exploring new technologies, contributing to 
-                        open-source projects, or sharing knowledge with the developer community.
-                    </p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <i class="fas fa-project-diagram stat-icon"></i>
-                            <div class="stat-content">
-                                <h4 class="stat-number">10+</h4>
-                                <p class="stat-label">Projects Completed</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-users stat-icon"></i>
-                            <div class="stat-content">
-                                <h4 class="stat-number">20+</h4>
-                                <p class="stat-label">Happy Clients</p>
-                            </div>
-                        </div>
-                        <div class="stat-item">
-                            <i class="fas fa-coffee stat-icon"></i>
-                            <div class="stat-content">
-                                <h4 class="stat-number">1000+</h4>
-                                <p class="stat-label">Cups of Coffee</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Get To Know Me</span>
+          <h2 class="section-title">
+            About <span class="gradient-text">Me</span>
+          </h2>
+          <div class="title-underline"></div>
         </div>
+
+        <div class="about-content">
+          <div class="about-image-container">
+            <div class="about-card">
+              <img
+                src="./images/bb3541b1-4be7-47d2-8f6f-27cf06798aa8.jpg"
+                alt="About Me"
+                class="about-img"
+              />
+              <div class="experience-badge">
+                <div class="badge-content">
+                  <span class="badge-number">2+</span>
+                  <span class="badge-text">Years Experience</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-text">
+            <h3 class="about-subtitle">
+              Full-Stack Developer & Creative Thinker
+            </h3>
+            <p class="about-paragraph">
+              I'm a passionate developer with a keen eye for design and a love
+              for creating exceptional digital experiences. My journey in web
+              development started with curiosity and has evolved into a
+              professional career where I combine technical expertise with
+              creative problem-solving.
+            </p>
+            <p class="about-paragraph">
+              I specialize in building modern, responsive websites and
+              applications using the latest technologies. From crafting
+              pixel-perfect user interfaces to developing robust backend
+              systems, I enjoy every aspect of bringing ideas to life.
+            </p>
+            <p class="about-paragraph">
+              When I'm not coding, you'll find me exploring new technologies,
+              contributing to open-source projects, or sharing knowledge with
+              the developer community.
+            </p>
+
+            <div class="about-stats">
+              <div class="stat-item">
+                <i class="fas fa-project-diagram stat-icon"></i>
+                <div class="stat-content">
+                  <h4 class="stat-number">10+</h4>
+                  <p class="stat-label">Projects Completed</p>
+                </div>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-users stat-icon"></i>
+                <div class="stat-content">
+                  <h4 class="stat-number">20+</h4>
+                  <p class="stat-label">Happy Clients</p>
+                </div>
+              </div>
+              <div class="stat-item">
+                <i class="fas fa-coffee stat-icon"></i>
+                <div class="stat-content">
+                  <h4 class="stat-number">1000+</h4>
+                  <p class="stat-label">Cups of Coffee</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">What I Do Best</span>
-                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="skills-container">
-                <!-- Frontend Skills -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
-                    <h3 class="category-title">Frontend Development</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">HTML5 & CSS3</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">JavaScript</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">React & Angular</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Backend Skills -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
-                    <h3 class="category-title">Backend Development</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Node.js & Express</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Java (Spring Boot)</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Database (SQL/NoSQL)</span>
-                                <span class="skill-percent">75%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">API Development</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Tools & Others -->
-                <div class="skill-category">
-                    <div class="category-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3 class="category-title">Tools & Technologies</h3>
-                    <div class="skills-list">
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Git & GitHub</span>
-                                <span class="skill-percent">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Docker</span>
-                                <span class="skill-percent">70%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 70%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">UI/UX Design</span>
-                                <span class="skill-percent">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-header">
-                                <span class="skill-name">Agile/Scrum</span>
-                                <span class="skill-percent">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Technology Icons -->
-            <div class="tech-stack">
-                <h3 class="tech-stack-title">Technologies I Work With</h3>
-                <div class="tech-icons">
-                    <div class="tech-icon" title="HTML5"><i class="fab fa-html5"></i></div>
-                    <div class="tech-icon" title="CSS3"><i class="fab fa-css3-alt"></i></div>
-                    <div class="tech-icon" title="JavaScript"><i class="fab fa-js"></i></div>
-                    <div class="tech-icon" title="React"><i class="fab fa-react"></i></div>
-                    <div class="tech-icon" title="Node.js"><i class="fab fa-node"></i></div>
-                    <div class="tech-icon" title="Python"><i class="fab fa-python"></i></div>
-                    <div class="tech-icon" title="Git"><i class="fab fa-git-alt"></i></div>
-                    <div class="tech-icon" title="GitHub"><i class="fab fa-github"></i></div>
-                    <div class="tech-icon" title="Docker"><i class="fab fa-docker"></i></div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">What I Do Best</span>
+          <h2 class="section-title">
+            My <span class="gradient-text">Skills</span>
+          </h2>
+          <div class="title-underline"></div>
         </div>
+
+        <div class="skills-container">
+          <!-- Frontend Skills -->
+          <div class="skill-category">
+            <div class="category-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="category-title">Frontend Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML5 & CSS3</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">React & Angular</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend Skills -->
+          <div class="skill-category">
+            <div class="category-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="category-title">Backend Development</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Node.js & Express</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Java (Spring Boot)</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Database (SQL/NoSQL)</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 75%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">API Development</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Others -->
+          <div class="skill-category">
+            <div class="category-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3 class="category-title">Tools & Technologies</h3>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Docker</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">UI/UX Design</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Agile/Scrum</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technology Icons -->
+        <div class="tech-stack">
+          <h3 class="tech-stack-title">Technologies I Work With</h3>
+          <div class="tech-icons">
+            <div class="tech-icon" title="HTML5">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="tech-icon" title="CSS3">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="tech-icon" title="JavaScript">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="tech-icon" title="React">
+              <i class="fab fa-react"></i>
+            </div>
+            <div class="tech-icon" title="Node.js">
+              <i class="fab fa-node"></i>
+            </div>
+            <div class="tech-icon" title="Python">
+              <i class="fab fa-python"></i>
+            </div>
+            <div class="tech-icon" title="Git">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="tech-icon" title="GitHub">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="tech-icon" title="Docker">
+              <i class="fab fa-docker"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">My Recent Work</span>
-                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-                <div class="title-underline"></div>
-                <p class="section-description">
-                    Here are some of my recent projects. Each one represents a unique challenge and learning experience.
-                </p>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/Screenshot 2026-02-12 203212.png" alt="TechCity Tunisia">
-                        <div class="project-overlay">
-                            <a href="https://techcity.tn/" target="_blank" class="project-btn">
-                                <i class="fas fa-external-link-alt"></i> View Live
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Web Design</span>
-                            <span class="tag">Business</span>
-                        </div>
-                        <h3 class="project-title">TechCity Tunisia</h3>
-                        <p class="project-description">
-                            A modern technology company website showcasing innovative tech solutions and services 
-                            with a clean, professional design.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card featured">
-                    <div class="project-image">
-                        <img src="./images/Screenshot 2026-02-12 204111.png" alt="3D Portfolio">
-                        <div class="project-overlay">
-                            <a href="https://jasserboulila.github.io/" target="_blank" class="project-btn">
-                                <i class="fas fa-external-link-alt"></i> View Live
-                            </a>
-                        </div>
-                        <div class="featured-badge">
-                            <i class="fas fa-star"></i> Featured
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">3D</span>
-                            <span class="tag">Interactive</span>
-                            <span class="tag">Portfolio</span>
-                        </div>
-                        <h3 class="project-title">3D Interactive Portfolio</h3>
-                        <p class="project-description">
-                            An immersive 3D portfolio website built with cutting-edge web technologies, 
-                            featuring interactive animations and stunning visual effects.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge"><i class="fab fa-react"></i> React</span>
-                            <span class="tech-badge"><i class="fas fa-cube"></i> Three.js</span>
-                            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="./images/Screenshot 2026-02-12 203139.png" alt="SBH Glory">
-                        <div class="project-overlay">
-                            <a href="https://sbh-glory.com/" target="_blank" class="project-btn">
-                                <i class="fas fa-external-link-alt"></i> View Live
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <div class="project-tags">
-                            <span class="tag">Corporate</span>
-                            <span class="tag">Modern</span>
-                        </div>
-                        <h3 class="project-title">SBH Glory</h3>
-                        <p class="project-description">
-                            A professional business website featuring modern design principles and 
-                            seamless user experience with elegant animations.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="tech-badge"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="tech-badge"><i class="fab fa-js"></i> JavaScript</span>
-                        </div>
-                    </div>
-                </article>
-            </div>
-
-            <div class="projects-cta">
-                <p>Want to see more of my work?</p>
-                <a href="https://github.com/jasserboulila" target="_blank" class="btn btn-outline">
-                    <i class="fab fa-github"></i> View All Projects on GitHub
-                </a>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">My Recent Work</span>
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Projects</span>
+          </h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Here are some of my recent projects. Each one represents a unique
+            challenge and learning experience.
+          </p>
         </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/Screenshot 2026-02-12 203212.png"
+                alt="TechCity Tunisia"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://techcity.tn/"
+                  target="_blank"
+                  class="project-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Live
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Web Design</span>
+                <span class="tag">Business</span>
+              </div>
+              <h3 class="project-title">TechCity Tunisia</h3>
+              <p class="project-description">
+                A modern technology company website showcasing innovative tech
+                solutions and services with a clean, professional design.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge"
+                  ><i class="fab fa-css3-alt"></i> CSS</span
+                >
+                <span class="tech-badge"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card featured">
+            <div class="project-image">
+              <img
+                src="./images/Screenshot 2026-02-12 204111.png"
+                alt="3D Portfolio"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://jasserboulila.github.io/"
+                  target="_blank"
+                  class="project-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Live
+                </a>
+              </div>
+              <div class="featured-badge">
+                <i class="fas fa-star"></i> Featured
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">3D</span>
+                <span class="tag">Interactive</span>
+                <span class="tag">Portfolio</span>
+              </div>
+              <h3 class="project-title">3D Interactive Portfolio</h3>
+              <p class="project-description">
+                An immersive 3D portfolio website built with cutting-edge web
+                technologies, featuring interactive animations and stunning
+                visual effects.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge"
+                  ><i class="fab fa-react"></i> React</span
+                >
+                <span class="tech-badge"
+                  ><i class="fas fa-cube"></i> Three.js</span
+                >
+                <span class="tech-badge"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image">
+              <img
+                src="./images/Screenshot 2026-02-12 203139.png"
+                alt="SBH Glory"
+              />
+              <div class="project-overlay">
+                <a
+                  href="https://sbh-glory.com/"
+                  target="_blank"
+                  class="project-btn"
+                >
+                  <i class="fas fa-external-link-alt"></i> View Live
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-tags">
+                <span class="tag">Corporate</span>
+                <span class="tag">Modern</span>
+              </div>
+              <h3 class="project-title">SBH Glory</h3>
+              <p class="project-description">
+                A professional business website featuring modern design
+                principles and seamless user experience with elegant animations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-badge"
+                  ><i class="fab fa-html5"></i> HTML</span
+                >
+                <span class="tech-badge"
+                  ><i class="fab fa-css3-alt"></i> CSS</span
+                >
+                <span class="tech-badge"
+                  ><i class="fab fa-js"></i> JavaScript</span
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-cta">
+          <p>Want to see more of my work?</p>
+          <a
+            href="https://github.com/jasserboulila"
+            target="_blank"
+            class="btn btn-outline"
+          >
+            <i class="fab fa-github"></i> View All Projects on GitHub
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-label">Let's Connect</span>
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <div class="title-underline"></div>
-                <p class="section-description">
-                    Have a project in mind or just want to chat? I'd love to hear from you!
-                </p>
-            </div>
-            
-            <div class="contact-content">
-                <!-- Contact Info -->
-                <div class="contact-info">
-                    <h3 class="contact-info-title">Let's talk about everything!</h3>
-                    <p class="contact-info-text">
-                        Don't hesitate to reach out! Whether you have a question, a project idea, 
-                        or just want to say hi, I'm always open to discussing new opportunities.
-                    </p>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="method-content">
-                                <h4>Email Me</h4>
-                                <a href="mailto:jasser@example.com">jasserboulila@proton.me</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="method-content">
-                                <h4>Call Me</h4>
-                                <a href="tel:+21612345678">+1 (942)660-5588</a>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-method">
-                            <div class="method-icon">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="method-content">
-                                <h4>Location</h4>
-                                <p>Canada , ontario</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="social-links-contact">
-                        <h4>Follow Me</h4>
-                        <div class="social-icons-group">
-                            <a href="https://github.com/jasserboulila" target="_blank" class="social-icon-contact">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/jasserboulila" target="_blank" class="social-icon-contact">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Contact Form -->
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">
-                                    <i class="fas fa-user"></i> Your Name *
-                                </label>
-                                <input 
-                                    type="text" 
-                                    id="name" 
-                                    name="name" 
-                                    required 
-                                    minlength="2"
-                                    placeholder="John Doe">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="email">
-                                    <i class="fas fa-envelope"></i> Your Email *
-                                </label>
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    required 
-                                    placeholder="john@example.com">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="subject">
-                                <i class="fas fa-tag"></i> Subject *
-                            </label>
-                            <input 
-                                type="text" 
-                                id="subject" 
-                                name="subject" 
-                                required 
-                                minlength="3"
-                                placeholder="How can I help you?">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="message">
-                                <i class="fas fa-comment"></i> Your Message *
-                            </label>
-                            <textarea 
-                                id="message" 
-                                name="message" 
-                                required 
-                                minlength="10"
-                                rows="6" 
-                                placeholder="Tell me more about your project..."></textarea>
-                        </div>
-
-                        <button type="submit" class="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <i class="fas fa-paper-plane"></i>
-                        </button>
-                    </form>
-
-                    <div id="successMessage" class="success-message">
-                        <i class="fas fa-check-circle"></i>
-                        <p>Thank you for your message! I'll get back to you soon.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">
+            Get In <span class="gradient-text">Touch</span>
+          </h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Have a project in mind or just want to chat? I'd love to hear from
+            you!
+          </p>
         </div>
+
+        <div class="contact-content">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3 class="contact-info-title">Let's talk about everything!</h3>
+            <p class="contact-info-text">
+              Don't hesitate to reach out! Whether you have a question, a
+              project idea, or just want to say hi, I'm always open to
+              discussing new opportunities.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Email Me</h4>
+                  <a href="mailto:jasser@example.com"
+                    >jasserboulila@proton.me</a
+                  >
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Call Me</h4>
+                  <a href="tel:+21612345678">+1 (942)660-5588</a>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="method-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="method-content">
+                  <h4>Location</h4>
+                  <p>Canada , ontario</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links-contact">
+              <h4>Follow Me</h4>
+              <div class="social-icons-group">
+                <a
+                  href="https://github.com/jasserboulila"
+                  target="_blank"
+                  class="social-icon-contact"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://linkedin.com/in/jasserboulila"
+                  target="_blank"
+                  class="social-icon-contact"
+                >
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">
+                    <i class="fas fa-user"></i> Your Name *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                    placeholder="John Doe"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">
+                    <i class="fas fa-envelope"></i> Your Email *
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">
+                  <i class="fas fa-tag"></i> Subject *
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  minlength="3"
+                  placeholder="How can I help you?"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="message">
+                  <i class="fas fa-comment"></i> Your Message *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  minlength="10"
+                  rows="6"
+                  placeholder="Tell me more about your project..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <div id="successMessage" class="success-message">
+              <i class="fas fa-check-circle"></i>
+              <p>Thank you for your message! I'll get back to you soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3 class="footer-logo">JB<span class="logo-dot">.</span></h3>
-                    <p class="footer-text">
-                        Building digital experiences that make a difference. 
-                        Let's create something amazing together!
-                    </p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-title">Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h4 class="footer-title">Get In Touch</h4>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-envelope"></i> jasserboulila@proton.me</li>
-                        <li><i class="fas fa-phone"></i> +1 (942)660-5588</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Canada , Ontario</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jasser Boulila. All rights reserved.</p>
-                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
-            </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3 class="footer-logo">JB<span class="logo-dot">.</span></h3>
+            <p class="footer-text">
+              Building digital experiences that make a difference. Let's create
+              something amazing together!
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4 class="footer-title">Get In Touch</h4>
+            <ul class="footer-contact">
+              <li><i class="fas fa-envelope"></i> jasserboulila@proton.me</li>
+              <li><i class="fas fa-phone"></i> +1 (942)660-5588</li>
+              <li><i class="fas fa-map-marker-alt"></i> Canada , Ontario</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Jasser Boulila. All rights reserved.</p>
+          <p>
+            Made with <i class="fas fa-heart"></i> and
+            <i class="fas fa-coffee"></i>
+          </p>
+        </div>
+      </div>
     </footer>
 
     <!-- Scroll to Top Button -->
     <button class="scroll-top" id="scrollTop">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Link to JavaScript file -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

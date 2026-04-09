@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="#hero">AL<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li>
+      <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </li>
+  </ul>
+</nav>
+
+<!-- INFINITE TICKER -->
+<div class="ticker-wrap" style="margin-top:70px;">
+  <div class="ticker-track" id="ticker">
+    <span>Available for hire</span><span class="dot">✦</span>
+    <span>UI / UX Design</span><span class="dot">✦</span>
+    <span>Front-End Dev</span><span class="dot">✦</span>
+    <span>Open to remote</span><span class="dot">✦</span>
+    <span>Creative Coder</span><span class="dot">✦</span>
+    <span>Problem Solver</span><span class="dot">✦</span>
+    <!-- duplicated for seamless loop -->
+    <span>Available for hire</span><span class="dot">✦</span>
+    <span>UI / UX Design</span><span class="dot">✦</span>
+    <span>Front-End Dev</span><span class="dot">✦</span>
+    <span>Open to remote</span><span class="dot">✦</span>
+    <span>Creative Coder</span><span class="dot">✦</span>
+    <span>Problem Solver</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-tag">Portfolio — 2025</div>
+  <h1 class="hero-title reveal">
+    Crafting digital<br>experiences that <em>matter.</em>
+  </h1>
+  <div class="typed-wrapper reveal">
+    I build&nbsp;<span class="typed-text" id="typedEl"></span><span class="cursor"></span>
+  </div>
+  <a href="#projects" class="hero-cta reveal">
+    View my work
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </a>
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    Scroll to explore
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label reveal">Selected Work</p>
+  <h2 class="section-title reveal">Things I've<br><em style="font-style:italic">built.</em></h2>
+  <div class="projects-grid">
+
+    <div class="project-card reveal">
+      <div class="project-num">01</div>
+      <h3 class="project-title">3d interactive Portfolio</h3>
+      <p class="project-desc">A 3d portfolio website to showcase my skills and projects.</p>
+      <div class="project-tags">
+        <span class="tag">React Three</span><span class="tag">Tailwind</span>
+      </div>
+      <a href="https://jasserboulila.github.io/" target="_blank" rel="noopener" class="project-link">View project →</a>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">02</div>
+      <h3 class="project-title">Tech City</h3>
+      <p class="project-desc">A minimal, elegant online store for a tech company — with cart, animations, and mobile-first design.</p>
+      <div class="project-tags">
+        <span class="tag">React</span><span class="tag">Tailwind</span><span class="tag">NodesJs</span>
+      </div>
+      <a href="https://techcity.tn" target="_blank"  rel="noopener" class="project-link">View project →</a>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-num">03</div>
+      <h3 class="project-title">SBH Glory</h3>
+      <p class="project-desc">A professional business website featuring modern design principles and seamless user experience with elegant animations.</p>
+      <div class="project-tags">
+        <span class="tag">Html</span><span class="tag">Css</span><span class="tag">JS</span>
+      </div>
+      <a href="https://sbh-glory.com/" target="_blank" rel="noopener" class="project-link">View project →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="section-label reveal">Get in Touch</p>
+  <h2 class="section-title reveal">Let's work<br><em style="font-style:italic">together.</em></h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="reveal">I'm always open to new projects, creative ideas, or opportunities to be part of something great. Drop me a message and I'll get back to you shortly.</p>
+      <div class="contact-socials reveal">
+        <a class="social-link" href="https://github.com/JASSERBOULILA">GitHub</a>
+        <a class="social-link" href="https://www.linkedin.com/in/jasser-boulila-422a68297/">LinkedIn</a>
+        <a class="social-link" href="#">jasserboulila@proton.me</a>
+      </div>
+    </div>
+    <form class="contact-form reveal" onsubmit="return false;">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Your name" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@email.com" />
+      </div>
+      <div class="form-group">
+        <label for="msg">Message</label>
+        <textarea id="msg" placeholder="Tell me about your project…"></textarea>
+      </div>
+      <button class="submit-btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Jasser boulila</span> — All rights reserved.</p>
+  <p>Designed & built with <span>♥</span></p>
+</footer>
+
+<script src="index.js" />
+
+</body>
+</html>
