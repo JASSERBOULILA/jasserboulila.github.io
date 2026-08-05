@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+
+body{
+
+    font-family:'Lato', sans-serif;
+
+    background:#FFF3E0;
+
+    color:#3B1F0B;
+
+}
+
+
+
+h1,h2,h3{
+
+    font-family:'Playfair Display', serif;
+
+}
+
+
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:#3B1F0B;
+
+}
+
+
+
+.logo{
+
+    color:#FFF3E0;
+
+    font-size:28px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+
+
+.nav-links a{
+
+    text-decoration:none;
+
+    color:#FFF3E0;
+
+}
+
+
+
+.nav-links a:hover{
+
+    color:#C89B3C;
+
+}
+
+
+
+
+.hero{
+
+
+height:80vh;
+
+
+background:
+
+linear-gradient(
+
+rgba(0,0,0,.5),
+
+rgba(0,0,0,.5)
+
+),
+
+url("../images/hero-coffee.jpg");
+
+
+
+background-size:cover;
+
+background-position:center;
+
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+
+text-align:center;
+
+color:white;
+
+
+}
+
+
+
+.hero-content{
+
+    max-width:700px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:60px;
+
+}
+
+
+
+.hero p{
+
+    font-size:22px;
+
+    margin:20px;
+
+}
+
+
+
+.btn{
+
+    display:inline-block;
+
+    background:#C89B3C;
+
+    color:white;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+
+
+.btn:hover{
+
+    transform:scale(1.1);
+
+    background:#6F4E37;
+
+}
+
+
+
+
+.featured{
+
+    padding:70px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.featured h2{
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.product-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.product-card{
+
+
+background:white;
+
+
+width:300px;
+
+
+padding:20px;
+
+
+border-radius:15px;
+
+
+transition:.3s;
+
+
+}
+
+
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
+}
+
+
+
+.product-card span{
+
+    display:block;
+
+    margin-top:15px;
+
+    font-size:22px;
+
+    color:#6F4E37;
+
+}
+
+
+
+
+.about-preview{
+
+    text-align:center;
+
+    padding:70px 15%;
+
+    background:#6F4E37;
+
+    color:white;
+
+}
+
+
+
+.about-preview h2{
+
+    font-size:40px;
+
+}
+
+
+
+.about-preview p{
+
+    margin:20px;
+
+    font-size:18px;
+
+}
+
+
+
+
+footer{
+
+    background:#3B1F0B;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+    flex-direction:column;
+
+}
+
+
+.nav-links{
+
+    margin-top:20px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:40px;
+
+}
+
+
+}
